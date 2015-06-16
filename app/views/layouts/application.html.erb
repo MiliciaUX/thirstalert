@@ -7,8 +7,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header class="navbar">
+  <div class="container">
+    <%= link_to "thirstalert", '#', id: "logo" %>
+    <nav>
+      <ul class="navbarcenter">
+        <li><%= link_to "Home", '#' %></li>
+        <li><%= link_to "About", '#' %></li>
+        <li><%= link_to "Dudes", '#' %></li>
+        <li><%= link_to "Chicks", '#' %></li>
+        <li><%= link_to "The_Ex", '#' %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="container">
 
-<%= yield %>
+    <%= yield %>
+</div>
 
 </body>
 </html>
