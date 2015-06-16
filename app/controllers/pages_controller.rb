@@ -10,4 +10,8 @@ class PagesController < ApplicationController
 
   def chicks
   end
+
+  def the_ex
+  end
+
 end

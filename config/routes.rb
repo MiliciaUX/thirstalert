@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get 'pages/chicks'
 
+  get 'pages/the_ex'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

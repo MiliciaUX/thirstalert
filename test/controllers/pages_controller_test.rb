@@ -21,4 +21,8 @@ class PagesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  test "should get the_ex" do
+    get :the_ex
+    assert_response :success
+  end
 end
