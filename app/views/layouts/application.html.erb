@@ -7,23 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<header class="navbar">
+<header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to "thirstalert", '#', id: "logo" %>
+    <%= link_to "ThirstAlert", '#', id: "logo" %>
     <nav>
-      <ul class="navbarcenter">
+      <ul class="nav navbar-nav navbar-center">
         <li><%= link_to "Home", '#' %></li>
-        <li><%= link_to "About", '#' %></li>
-        <li><%= link_to "Dudes", '#' %></li>
-        <li><%= link_to "Chicks", '#' %></li>
-        <li><%= link_to "The_Ex", '#' %></li>
+        <li><%= link_to "About", 'about' %></li>
+        <li><%= link_to "Dudes", 'dudes' %></li>
+        <li><%= link_to "Chicks", 'chicks' %></li>
+        <li><%= link_to "The Ex", 'the_ex' %></li>
       </ul>
     </nav>
   </div>
 </header>
 <div class="container">
-
-    <%= yield %>
+   <%= yield %>
 </div>
 
 </body>
