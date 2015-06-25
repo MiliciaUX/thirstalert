@@ -5,10 +5,40 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
-<%= yield %>
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <img class="hydrant" src="/assets/images/hydrant2.png" alt="hydrant2" />
+  <div class="container">
+    <%= link_to "ThirstAlert", '#', id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Home", 'home' %></li>
+        <li><%= link_to "About", 'about' %></li>
+        <li><%= link_to "Dudes", 'dudes' %></li>
+        <li><%= link_to "Chicks", 'chicks' %></li>
+        <li><%= link_to "The Ex", 'the_ex' %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="container">
+   <%= yield %>
+ <footer class="footer">
+   <nav>
+    <ul>
+      <li><%= link_to "Home", '#' %></li>
+      <li><%= link_to "About", 'about' %></li>
+      <li><%= link_to "Dudes", 'dudes' %></li>
+      <li><%= link_to "Chicks", 'chicks' %></li>
+      <li><%= link_to "The Ex", 'the_ex' %></li>
+    </ul>
+  </nav>
+ </footer>
+</div>
 
 </body>
 </html>
