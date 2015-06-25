@@ -5,13 +5,15 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
 </head>
 <body>
 <header class="navbar navbar-fixed-top navbar-inverse">
+  <img class="hydrant" src="/assets/images/hydrant2.png" alt="hydrant2" />
   <div class="container">
     <%= link_to "ThirstAlert", '#', id: "logo" %>
     <nav>
-      <ul class="nav navbar-nav navbar-center">
+      <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", '#' %></li>
         <li><%= link_to "About", 'about' %></li>
         <li><%= link_to "Dudes", 'dudes' %></li>
@@ -23,6 +25,17 @@
 </header>
 <div class="container">
    <%= yield %>
+ <footer>
+   <nav>
+    <ul>
+      <li><%= link_to "Home", '#' %></li>
+      <li><%= link_to "About", 'about' %></li>
+      <li><%= link_to "Dudes", 'dudes' %></li>
+      <li><%= link_to "Chicks", 'chicks' %></li>
+      <li><%= link_to "The Ex", 'the_ex' %></li>
+    </ul>
+  </nav>
+ </footer>
 </div>
 
 </body>
