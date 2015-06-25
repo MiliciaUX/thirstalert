@@ -1,0 +1,113 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* universal */
+
+body {
+  padding-top: 90px;
+  background-color: #000000;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  font-family: 'Lobster Two', cursive;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 2.5em;
+  letter-spacing: -1.5px;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  color: #FFFF00;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+/* header */
+
+header a{
+  color: #FFFF80;
+}
+
+footer a:hover {
+  color: #999900;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 2em;
+  text-transformation: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  font-family: 'Lobster', cursive;
+  color: #FFFF00;
+}
+
+#logo:hover {
+  color: #999900;
+  text-decoration: none;
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #FFFF80;
+  background-color: #000;
+  color: #F7F7F7;
+}
+
+footer a {
+  color: #FFFF80;
+}
+
+footer a:hover {
+  color: #999900;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}

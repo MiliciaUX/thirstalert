@@ -5,7 +5,9 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <header class="navbar navbar-fixed-top navbar-inverse">
@@ -14,7 +16,7 @@
     <%= link_to "ThirstAlert", '#', id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", '#' %></li>
+        <li><%= link_to "Home", 'home' %></li>
         <li><%= link_to "About", 'about' %></li>
         <li><%= link_to "Dudes", 'dudes' %></li>
         <li><%= link_to "Chicks", 'chicks' %></li>
@@ -25,7 +27,7 @@
 </header>
 <div class="container">
    <%= yield %>
- <footer>
+ <footer class="footer">
    <nav>
     <ul>
       <li><%= link_to "Home", '#' %></li>
