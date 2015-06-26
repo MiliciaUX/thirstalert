@@ -12,7 +12,6 @@ Rails.application.routes.draw do
 
   get 'pages/the_ex'
 
-  get 'signup'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
